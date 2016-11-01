@@ -13,7 +13,8 @@ public class BigIntPrime {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		BigInteger a = new BigInteger(sc.next());
-		System.out.println(a.isProbablePrime(1));
+		String result= a.isProbablePrime(1) ? "prime" : "not prime";
+		System.out.println(result);
 		sc.close();
 	}
 
