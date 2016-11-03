@@ -20,10 +20,11 @@ public class FaceBookPhotoUpload {
 			String[] dimension = str.split(" ");
 			int w = Integer.valueOf(dimension[0]);
 			int h = Integer.valueOf(dimension[1]);
-			if ((w == l && h == l) || w == h) {
-				System.out.println("ACCEPTED");
-			} else if (w < l || h < l) {
+			
+			if (w < l || h < l) {
 				System.out.println("UPLOAD ANOTHER");
+			} else if (w == h) {
+				System.out.println("ACCEPTED");
 			} else {
 				System.out.println("CROP IT");
 			}
